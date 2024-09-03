@@ -2,12 +2,271 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bick Store</title>
+    <link rel="stylesheet" href="./pages/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color:white;
+    color: black;
+    padding: 1em 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Cinzel", serif;
+    font-size: 40px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em 1em;
+}
+
+.hero {
+    background-color:#ffcc80;
+    padding: 2em;
+    text-align: center;
+    border-radius: 20px;
+}
+#Headig{
+    font-size: 50px;
+    color: red;
+    font-family: "Matemasie", sans-serif;
+}
+
+.books {
+    padding: 2em 0;
+}
+
+.books .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book-item {
+    flex: 1 1 calc(33% - 1em);
+    padding: 30px;
+    text-align: center;
+}
+
+.book-item img {
+    max-width: 100%;
+    height: auto;
+}
+.Footer{
+        display: flex;
+        height: 270px;
+        width: 100%;
+        justify-content: center;
+        background-color:#ffcc80;
+    }
+    .Contact_Us{
+        height: 190px;
+        width: 390px;
+        margin: 40px 0 0 20px;
+    }
+    #Contact_content{
+        text-align: center;
+        color: black;
+        margin-top: 10px;
+    }
+    .Bick{
+        height: 190px;
+        width: 390px;
+        margin: 40px 0 0 60px;
+    }
+    #Bick_Content{
+        text-align: center;
+        color: black;
+        margin-top:20px ;
+        font-size: 30px;
+    }
+    #Bick_content_1{
+        text-align: center;
+        margin-top:20px ;
+        color: black;
+    }
+    #icon_img{
+        height:40px;
+        width: 40px;
+        margin-top: 5px;
+        position: relative;
+        left: 105px;
+    }
+    .Opening_Hours{
+        height: 190px;
+        width: 390px;
+        margin: 40px 0 0 60px;
+    }
+    #Opening_Content{
+        text-align: center;
+        color: black;
+        margin-top:20px ;
+        font-size: 30px;
+    }
+    #Opening_content_1{
+        text-align: center;
+        color: black;
+        margin-top:20px ;
+    }
+    #Opening_content_2{
+        text-align: center;
+        color: black;
+        margin-top:20px;
+    }
+/* Tablet  */
+@media (max-width: 900px) and (min-width:769px){
+    .books .container {
+        flex-direction: column;
+    }
+    .book-item {
+        flex: 1 1 100%;
+    }
+    .Bick{
+        margin: 40px 0 0 0;
+    }
+}
+/* mobile */
+@media (max-width: 480px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    #Headig {
+    font-size: 30px;
+    color: red;
+    font-family: "Matemasie", sans-serif;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 0.5px 0;
+    }
+    .Footer{
+        flex-direction: column;
+        height: 650px;
+        width: 450px;
+        align-items: center;
+    }
+}
+.img1{
+    height: 300px;
+    width: 400px;
+}
+    </style>
 </head>
 <body>
-    <div>
-        <h1>Demo_Project</h1>
-    </div>
+    <header>
+        <div class="container">
+            <h1>Bick store🏍️...</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Bick</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h2><b><span id="Headig">Welcome to the Bick Store</span></b></h2>
+        </section>
+        <section class="books">
+            <div class="container">
+                <div class="book-item">
+                    <img src="./img.jpg" alt="Img" class="img1">
+                    <h3>Royal Enfield Continental GT 650</h3>
+                    <p>₹3.43 lakhs</p>
+                </div>
+                <div class="book-item">
+                    <img src="./img1.jpg" alt="Img_1" class="img1">
+                    <h3>Royal Enfield Bullet</h3>
+                    <p>₹1.34 lakhs</p>
+                </div>
+                <div class="book-item">
+                    <img src="./img2.jpg" alt="Img_2" class="img1">
+                    <h3>Classic 350</h3>
+                    <p>₹1.65 lakhs
+                    </p>
+                </div>
+                <div class="book-item">
+                    <img src="./img.jpg" alt="Img_1" class="img1">
+                    <h3>Royal Enfield Continental GT 650</h3>
+                    <p>₹3.43 lakhs</p>
+                </div>
+                <div class="book-item">
+                    <img src="./img1.jpg" alt="Img_1" class="img1">
+                    <h3>Royal Enfield Bullet</h3>
+                    <p>₹1.34 lakhs</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="Footer">
+         <div class="Contact_Us">
+             <p id="Bick_Content"  class="Font_Family">Contact Us</p>
+             <p id="Contact_content">Location</p>
+             <p id="Contact_content">Call+ 91 8421886407</p>
+             <p id="Contact_content">tousifjamadar@52gmail.com</p>
+         </div>
+         <div class="Bick">
+             <p id="Bick_Content"  class="Font_Family">Ride With Us</p>
+             <p id="Bick_content_1">Explore our premium selection of bikes and gear. Ride with confidence. Quality guaranteed. 🚴‍♂️</p>
+             <img src="instagram.png" alt="Insta_img" id="icon_img">
+             <img src="linkedin.png" alt="LinkedIn_img" id="icon_img">
+             <img src="twitter.png" alt="Twitter_img" id="icon_img">
+             <img src="facebook.png" alt="Facebook_img"  id="icon_img">
+         </div>
+         <div class="Opening_Hours">
+             <p id="Opening_Content" class="Font_Family">Opening Hours</p>
+             <p id="Opening_content_1">Everyday</p>
+             <p id="Opening_content_2">10.00 Am -10.00 Pm</p>
+         </div>
+        </div>
+     </footer>
+    
 </body>
 </html>
