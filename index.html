@@ -33,7 +33,7 @@ header .container {
 header h1 {
     margin: 0;
     font-family: "Cinzel", serif;
-    font-size: 40px;
+    font-size: 30px;
 }
 nav ul {
     list-style: none;
@@ -62,10 +62,10 @@ main {
     color: red;
     font-family: "Matemasie", sans-serif;
 }
-.bick {
+.Vegetable_1 {
     padding: 2em 0;
 }
-.bick .container {
+.Vegetable_1 .container {
     display: flex;
     flex-wrap: wrap;
 }
@@ -80,7 +80,7 @@ main {
 }
 .Footer{
     display: flex;
-    height: 270px;
+    height: 300px;
     width: 100%;
     justify-content: center;
     background-color:#ffcc80;
@@ -95,18 +95,18 @@ main {
      color: black;
      margin-top: 10px;
 }    
-.Bick{
+.Vegetable{
      height: 190px;
      width: 390px;
      margin: 40px 0 0 60px;
 }
-#Bick_Content{
+#Vegetable_Content{
      text-align: center;
      color: black;
      margin-top:20px ;
      font-size: 30px;
 }
-#Bick_content_1{
+#Vegetable_Content_1{
      text-align: center;
      margin-top:20px ;
      color: black;
@@ -145,13 +145,13 @@ main {
 }
 /* Tablet  */
 @media (max-width: 900px) and (min-width:769px){
-    .bick .container {
+    .Vegetable_1 .container {
         flex-direction: column;
     }
     .book-item {
         flex: 1 1 100%;
     }
-    .Bick{
+    .Vegetable{
         margin: 40px 0 0 0;
     }
 }
@@ -184,11 +184,11 @@ main {
 <body>
     <header>
         <div class="container">
-            <h1>Bick store🏍️...</h1>
+            <h1>Vegetable stor🥦...</h1>
             <nav>
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">Bick</a></li>
+                    <li><a href="">Vegetable</a></li>
                     <li><a href="">About Us</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
@@ -198,35 +198,34 @@ main {
     
     <main>
         <section class="Box">
-            <h2><b><span id="Headig">Welcome to the Bick Store</span></b></h2>
+            <h2><b><span id="Headig">Welcome to the Vegetable Store</span></b></h2>
         </section>
-        <section class="bick">
+        <section class="Vegetable_1">
             <div class="container">
                 <div class="book-item">
                     <img src="./img/img.jpg" alt="Img" class="img1">
-                    <h3>Royal Enfield Continental GT 650</h3>
-                    <p>₹3.43 lakhs</p>
+                    <h3>Beetroot</h3>
+                    <p>₹40</p>
                 </div>
                 <div class="book-item">
                     <img src="./img/img1.jpg" alt="Img_1" class="img1">
-                    <h3>Royal Enfield Bullet</h3>
-                    <p>₹1.34 lakhs</p>
+                    <h3>Capsicum</h3>
+                    <p>₹50</p>
                 </div>
                 <div class="book-item">
                     <img src="./img/img2.jpg" alt="Img_2" class="img1">
-                    <h3>Classic 350</h3>
-                    <p>₹1.65 lakhs
-                    </p>
+                    <h3>Onion</h3>
+                    <p>₹40</p>
                 </div>
                 <div class="book-item">
-                    <img src="./img/img.jpg" alt="Img_1" class="img1">
-                    <h3>Royal Enfield Continental GT 650</h3>
-                    <p>₹3.43 lakhs</p>
+                    <img src="./img/img3.jpg" alt="Img_1" class="img1">
+                    <h3>Cauliflower</h3>
+                    <p>₹30</p>
                 </div>
                 <div class="book-item">
-                    <img src="./img/img2.jpg" alt="Img_1" class="img1">
-                    <h3>Royal Enfield Bullet</h3>
-                    <p>₹1.34 lakhs</p>
+                    <img src="./img/img4.jpg" alt="Img_1" class="img1">
+                    <h3>Potato</h3>
+                    <p>₹70</p>
                 </div>
             </div>
         </section>
@@ -235,14 +234,14 @@ main {
     <footer>
         <div class="Footer">
          <div class="Contact_Us">
-             <p id="Bick_Content"  class="Font_Family">Contact Us</p>
+             <p id="Vegetable_Content"  class="Font_Family">Contact Us</p>
              <p id="Contact_content">Location</p>
              <p id="Contact_content">Call+ 91 8421886407</p>
              <p id="Contact_content">tousifjamadar@52gmail.com</p>
          </div>
-         <div class="Bick">
-             <p id="Bick_Content"  class="Font_Family">Ride With Us</p>
-             <p id="Bick_content_1">Explore our premium selection of bikes and gear. Ride with confidence. Quality guaranteed. 🚴‍♂️</p>
+         <div class="Vegetable">
+             <p id="Vegetable_Content"  class="Font_Family">Healthy Eating Starts Here</p>
+             <p id="Vegetable_Content_1">Join our community for exclusive recipes, tips, and updates on seasonal produce.🥦</p>
              <img src="./img/instagram.png" alt="Insta_img" id="icon_img">
              <img src="./img/linkedin.png" alt="LinkedIn_img" id="icon_img">
              <img src="./img/twitter.png" alt="Twitter_img" id="icon_img">
